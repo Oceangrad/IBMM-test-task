@@ -9,6 +9,7 @@
     background-color: #FFFFFF;
     margin: 0 auto;
     padding: 30px;
+    box-sizing: content-box;
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px #00000040;
     grid-template-areas: 
@@ -114,11 +115,9 @@
     grid-area: K;
 }
 
-.content-box{ border-radius: 20px; overflow: hidden;}
+.content-box{ border-radius: 20px; overflow: hidden; }
 
 .content-box .caption{
-    /* margin-top: 25px;
-    margin-left: 30px; */
     position: relative;
     top: 25px;
     left: 30px;
