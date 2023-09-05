@@ -1,0 +1,153 @@
+#content-grid, #first-container, #second-container, #third-container, #col-1, #col-2{
+    display: grid;
+    gap: 20px;
+}
+
+#content-grid{
+    width: 1320px;
+    height: 750px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px #00000040;
+    grid-template-areas: 
+    "first second third"
+    ;
+}
+
+#first-container{
+    grid-template-areas: 
+    "A"
+    "B"
+    ;
+    grid-area: first;
+}
+
+#second-container{
+    grid-template-areas: 
+    "E F"
+    "G G"
+    ;
+    grid-area: second;
+}
+
+#third-container{
+    grid-template-areas: 
+    "J"
+    "K"
+    ;
+    grid-area: third;
+}
+
+#col-1{
+    grid-template-areas: 
+    "C"
+    "D"
+    ;
+    grid-area: E;
+}
+#col-2{
+    grid-template-areas: 
+    "H"
+    "I"
+    ;
+    grid-area: F;
+}
+
+#first-container .content-box:nth-child(1){
+    background: #1C3F5C;
+    height: 365px;
+    width: 427px;
+    grid-area: A;
+}
+#first-container .content-box:nth-child(2){
+    background: #E1E1E1;
+    height: 365px;
+    width: 427px;
+    grid-area: B;
+}
+
+#col-1 .content-box:nth-child(1){
+    background: #0078DB;
+    height: 190px;
+    width: 315px;
+    grid-area: C;
+}
+#col-1 .content-box:nth-child(2){
+    background: #1C3F5C;
+    height: 437px;
+    width: 315px;
+    grid-area: D;
+}
+
+#col-2 .content-box:nth-child(1){
+    background: #E1E1E1;
+    height: 376px;
+    width: 315px;
+    grid-area: H;
+}
+#col-2 .content-box:nth-child(2){
+    background: #449AE1;
+    height: 251px;
+    width: 315px;
+    grid-area: I;
+}
+
+#second-container .content-box:nth-child(3){
+    background: #1C3F5C;
+    height: 83px;
+    width: 650px;
+    grid-area: G;
+}
+
+#third-container .content-box:nth-child(1){
+    background: #0078DB;
+    height: 340px;
+    width: 203px;
+    grid-area: J;
+}
+#third-container .content-box:nth-child(2){
+    background: #E1E1E1;
+    height: 390px;
+    width: 203px;
+    grid-area: K;
+}
+
+.content-box{ border-radius: 20px; overflow: hidden;}
+
+.content-box .caption{
+    /* margin-top: 25px;
+    margin-left: 30px; */
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+
+.content-box .caption span:nth-child(1){
+    font-family: Ruberoid;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.content-box .caption span:nth-child(3){
+    font-family: Ruberoid;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+.blockchain-box .caption{
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.light-text{ color: #FFFFFF; }
+
+.dark-text{ color: #00325C; }
