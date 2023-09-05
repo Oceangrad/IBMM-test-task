@@ -1,7 +1,4 @@
-#content-grid, #first-container, #second-container, #third-container, #col-1, #col-2{
-    display: grid;
-    gap: 20px;
-}
+#content-grid, #first-container, #second-container, #third-container, #col-1, #col-2{ display: grid; gap: 20px; }
 
 #content-grid{
     width: 1320px;
@@ -115,7 +112,7 @@
     grid-area: K;
 }
 
-.content-box{ border-radius: 20px; overflow: hidden; text-decoration: none; }
+.content-box{ border-radius: 20px; overflow: hidden; }
 .content-box img{ scale: 1; z-index: 1; }
 
 .content-box .caption{
@@ -149,9 +146,6 @@
     left: 30px;
 }
 
-.light-text{ color: #FFFFFF; }
-.dark-text{ color: #00325C; }
-
 nav{ margin: 0.25em auto; }
 header{
     box-sizing: content-box;
@@ -174,7 +168,7 @@ footer{
     font-family: Ruberoid;
 }
 
-nav a, .first-header{ margin: 0 0.5em; text-decoration: none; }
+nav a, .first-header{ margin: 0 0.5em; }
 nav a:hover{ color: #449AE1; text-decoration:underline; }
 
 #mid-header{
@@ -223,7 +217,6 @@ nav a:hover{ color: #449AE1; text-decoration:underline; }
 }
 
 #footer-block figure a{
-    text-decoration: none;
     color: #E1E1E1;
 }
 
@@ -238,10 +231,11 @@ nav a:hover{ color: #449AE1; text-decoration:underline; }
 
 #footer-block figure figcaption a{
     display: block;
-    text-decoration: none;
     color: #E1E1E1;
 }
 
-#footer-block figure figcaption a:hover{
-    color: #cacaca;
-}
+#footer-block figure figcaption a:hover{ color: #cacaca; }
+
+#footer-block figure a, #footer-block figure figcaption a, nav a, .first-header, .content-box{ text-decoration: none; }
+.light-text{ color: #FFFFFF; }
+.dark-text{ color: #00325C; }
