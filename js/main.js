@@ -1,7 +1,3 @@
-$(document).ready(function(){
-    
-})
-
 $(".content-box").mouseenter(function(){
     $(this).find("img").stop();
     $(this).find("img").animate({scale: "1.1"}, 'fast');
