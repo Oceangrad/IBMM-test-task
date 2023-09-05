@@ -152,12 +152,7 @@
 .light-text{ color: #FFFFFF; }
 .dark-text{ color: #00325C; }
 
-nav a, .first-header{ margin: 0 0.5em; text-decoration: none; }
-
-nav{
-    margin: 0.25em auto;
-}
-
+nav{ margin: 0.25em auto; }
 header{
     box-sizing: content-box;
     min-width: 1380px;
@@ -168,6 +163,18 @@ header{
     font-size: 1.2em;
     font-family: Ruberoid;
 }
+footer{
+    box-sizing: content-box;
+    min-width: 1380px;
+    min-height: 200px;
+    background-color: #00325C;
+    text-align: center;
+    font-weight: 1em;
+    font-size: 1.2em;
+    font-family: Ruberoid;
+}
+
+nav a, .first-header{ margin: 0 0.5em; text-decoration: none; }
 
 #mid-header{
     width: 100%;
@@ -176,10 +183,6 @@ header{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-}
-
-#mid-header-block{
-    width: fit-content;
 }
 
 #mid-header-container{
@@ -197,15 +200,47 @@ header{
     border-radius: 0.5em;
 }
 
-#mid-header-container button:hover{
-    background-color: #0078DB;
-    color: #FFFFFF;
+#mid-header-container button:hover{ background-color: #0078DB; color: #FFFFFF; }
+
+.first-header{ margin: 0 1.1em; }
+
+.icon-button-image{ width: 1.5em; }
+
+#footer-block{
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.first-header{
-    margin: 0 1.1em;
+#footer-block figure{
+    width: 15em;
+    min-height: 100%;
+    padding: 1em;
+    text-align: left;
+    font-size: 1.5em;
 }
 
-.icon-button-image{
-    width: 1.5em;
+#footer-block figure a{
+    text-decoration: none;
+    color: #E1E1E1;
+}
+
+#footer-block figure a:hover{
+    color: #449AE1;
+}
+
+#footer-block figure figcaption{
+    text-align: left;
+    font-size: 0.75em;
+}
+
+#footer-block figure figcaption a{
+    display: block;
+    text-decoration: none;
+    color: #E1E1E1;
+}
+
+#footer-block figure figcaption a:hover{
+    color: #cacaca;
 }
