@@ -115,12 +115,14 @@
     grid-area: K;
 }
 
-.content-box{ border-radius: 20px; overflow: hidden; }
+.content-box{ border-radius: 20px; overflow: hidden;}
+.content-box img{ scale: 1; z-index: 1;}
 
 .content-box .caption{
     position: relative;
     top: 25px;
     left: 30px;
+    z-index: 2;
 }
 
 .content-box .caption span:nth-child(1){
